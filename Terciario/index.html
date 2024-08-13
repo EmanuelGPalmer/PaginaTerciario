@@ -3,70 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de Usuario</title>
+    <title>Aula Virtual - Usuarios</title>
     <link rel="stylesheet" href="../Terciario/css/style.css">
+    <!-- Fuente Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="logo.png" alt="Logo del Terciario" class="terciario-logo">
-        </div>
-        <div class="hamburger-menu" id="hamburgerMenu">
-            ☰
-        </div>
-        <div class="user-info-container">
-            <div class="user-info">Usuario</div>
-            <div class="user-menu">
-                <ul>
-                    <li><a href="#">Configuración</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
-                </ul>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <!-- Espacio para el logo -->
+                <img src="../Terciario/Imagenes/LogoPage.jpg" alt="Logo del Terciario" class="terciario-logo">
             </div>
+            <div class="user-info-container">
+                <div class="user-info">
+                    <span class="user-name">Nombre de Usuario</span>
+                    <span class="user-role">Rol</span>
+                    <img src="../Terciario/Imagenes/User.png" alt="Usuario" class="user-icon">
+                </div>
+                <div class="user-menu">
+                    <ul>
+                        <li>Configuración</li>
+                        <li>Ayuda</li>
+                        <li>Cerrar sesión</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><img src="usuarios-icon.png" alt="Usuarios Icono" class="sidebar-icon"> Usuarios</li>
+                        <li><img src="materias-icon.png" alt="Materias Icono" class="sidebar-icon"> Materias</li>
+                        <li><img src="carrera-icon.png" alt="Carrera Icono" class="sidebar-icon"> Carrera</li>
+                        <li><img src="finales-icon.png" alt="Finales Icono" class="sidebar-icon"> Finales</li>
+                        <li><img src="documentacion-icon.png" alt="Documentación Icono" class="sidebar-icon"> Documentación</li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="main-content">
+                <!-- Cuatro rectángulos con información del terciario -->
+                <section class="terciario-info">
+                    <div class="info-box">Información 1</div>
+                    <div class="info-box">Información 2</div>
+                    <div class="info-box">Información 3</div>
+                    <div class="info-box">Información 4</div>
+                </section>
+
+                <section class="content">
+                    <h1>Usuarios</h1>
+                    <div class="user-actions">
+                        <button class="btn-new-user">+ Nuevo usuario</button>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Buscar...">
+                            <button class="btn-search">🔍</button>
+                        </div>
+                    </div>
+
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Curso</th>
+                                <th>Horario</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Curso</td>
+                                <td>Horario</td>
+                                <td>Rol</td>
+                                <td>
+                                    <!-- Botones de acción -->
+                                    <button class="btn-action btn-green">✔</button>
+                                    <button class="btn-action btn-red">✖</button>
+                                    <button class="btn-action btn-search">🔍</button>
+                                </td>
+                            </tr>
+                            <!-- Repite filas según sea necesario -->
+                        </tbody>
+                    </table>
+                </section>
+            </main>
         </div>
     </div>
-
-    <div class="content">
-        <div class="sidebar" id="sidebar">
-            <ul>
-                <li><span class="icon">📁</span> Usuarios</li>
-                <li><span class="icon">📚</span> Materias</li>
-                <li><span class="icon">🏫</span> Carreras</li>
-                <li><span class="icon">📝</span> Finales</li>
-                <li><span class="icon">📄</span> Documentación</li>
-            </ul>
-        </div>
-
-        <div class="main-content">
-            <table class="user-table">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Curso</th>
-                        <th>Horario</th>
-                        <th>Rol</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nombre</td>
-                        <td>Apellido</td>
-                        <td>Curso</td>
-                        <td>Horario</td>
-                        <td>Rol</td>
-                        <td>
-                            <button class="action-button">Acción</button>
-                        </td>
-                    </tr>
-                    <!-- Repite filas según sea necesario -->
-                </tbody>
-            </table>
-        </div>
-    </div>
-
     <script src="../Terciario/js/java.js"></script>
 </body>
 </html>

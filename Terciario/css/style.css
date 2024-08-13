@@ -1,9 +1,9 @@
 /* Colores utilizados */
 :root {
-  --sidebar-color: #21659c; /* Azul oscuro para la barra lateral y el header */
+  --sidebar-color: #1c3a5b; /* Azul oscuro para la barra lateral y el header */
   --background-color: #f4f4f4;
   --font-color: #333;
-  --button-color: #2CAC84;
+  --button-color: #4CAF50;
   --header-color: var(--sidebar-color);
   --light-gray: #e0e0e0; /* Gris claro */
   --white: #ffffff; /* Blanco */
@@ -129,15 +129,6 @@ body, html {
   background-color: #2a4f73; /* Un tono más claro para el hover */
 }
 
-.sidebar ul li:hover {
-  background-color: #444;
-}
-
-/* Estilo para el botón seleccionado */
-.sidebar ul li.selected {
-  background-color: #555;
-}
-
 /* Main content */
 .main-content {
   flex-grow: 1;
@@ -233,4 +224,45 @@ body, html {
 
 .info-box:last-child {
   margin-right: 0; /* Elimina el margen derecho del último cuadro */
+}
+/* Botones de acción en la tabla */
+.btn-action {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* Botón verde */
+.btn-green {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+}
+
+/* Botón rojo */
+.btn-red {
+  background-color: #f44336; /* Rojo */
+  color: white;
+}
+
+/* Botón con icono de lupa */
+.btn-search {
+  background-color: #ccc; /* Gris claro */
+  color: black;
+}
+
+/* Ajuste de tamaño y espaciado uniforme */
+.btn-action:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+* Estilo para el hover de los botones de la izquierda */
+.sidebar ul li:hover {
+    background-color: #444;
+}
+
+/* Estilo para el botón seleccionado */
+.sidebar ul li.selected {
+    background-color: #555;
 }
